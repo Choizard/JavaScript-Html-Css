@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- 이 문서는 html5 형식의 문서임을 알리는 웹브라우저에게 알리는 선언부-->
+<!-- html 문서는 head 요소와 body 요소로 구성-->
+<html lang="en">
+<head>
+    <!-- head 요소 안에는 설정 정보나 웹페이지의 제목 등으로 구성된다.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의페이지</title> <!-- 웹페이지의 제목-->
+    <style>
+        /*
+            선택자{
+                css 속성 : 값 ;
+                css 속성2 : 값 ;
+                css 속성3 : 값 ;
+            }
+
+            - 사용할수 있는 css 속성은 이미 정해져 있다 ( 마음대로 지어 낼수 없다 ) 
+            - css 속성에 적용할 값은 이미 정해진 카테고리 내에서 고르는것도 있고
+              또는 크기나 색상같은 값은 정해진 단위에 맞춰서 원하는 값을 지정하면 된다. 
+        */
+
+        h1{
+            color:red;
+            background-color: yellow;
+        }
+    </style> 
+</head>
+<!-- body 요소에는 주로 화면에 나타낼 요소를 작성 -->
+<body>
+    <!--
+        이건 html안에서의 주석임 
+        웹브라우저가 해석하지 않음
+    -->
+    <h1>제목입니다.</h1>
+    <img src="images/kim1.png" alt="김구라 이미지" onmouseover="greet();"> <!-- alt= 다음의 설명은 대체 텍스트 (시각장애인을 위한 이미지의 설명)-->
+    <button onclick="greet();">인사하기</button> <!-- "greet();" 도 javascript의 영역-->
+<!--   요소  속성명 = "속성밸류"    -->
+    <script>
+        //여기는 javascript의 영역입니다. 작성한 javascript는 페이지 로딩시에 웹브라우저가 해석함.
+
+           /* 여러줄의 주석은 css와 같음 */
+
+        //페이지로딩시에 알림창으로 여러분의 이름을 띄워보세요.
+        alert("최현호");
+        //페이지 로딩시에 콘솔창으로 숫자999를 출력해보세요.
+        console.log(999);
+
+
+
+        //greet 이라는 이름의 함수(기능) 만들기
+        function greet() {
+            //함수 안에는 실행할 javascript를 작성할 수 있다
+            alert("안녕하세요");
+
+        }
+    </script>
+</body>
+</html>

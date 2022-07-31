@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step08_table.html</title>
+
+    <style>
+        #my-table{
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>표 (table) 형식으로 정보를 출력하기 (약식) </h1>
+    <table>
+            <tr>
+                <th>번호</th> <!--th 는 굵은글씨 중앙정렬 (표 제일 윗줄 = 칼럼)-->
+                <th>이름</th>
+                <th>주소</th>
+            </tr>
+            <tr>
+                <td>1</td> <!-- td 는 굵은글씨x 중앙정렬 -->
+                <td>김구라</td>
+                <td>노량진</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>해골</td>
+                <td>행신동</td>
+            </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>김구라</td>
+            <td>노량진</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>해골</td>
+            <td>행신동</td>
+        </tr>
+    </table>
+
+    <table border="1" id="my-table">
+        <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>김구라</td>
+            <td>노량진</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>해골</td>
+            <td>행신동</td>
+        </tr>
+    </table>
+</body>
+</html>

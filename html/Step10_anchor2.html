@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step10_anchor2.html</title>
+    <style>
+        /*
+            특정 div를 가운데 정렬하는 방법
+            1. width 를 결정한다.
+            2. 좌우 마진을 auto로 설정하면 마진이 같게 설정되어서 가운데 정렬된다.
+        */
+        .container{
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .spacer{
+            height: 500px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body> <!-- visual Studio의 emmet 기능-->
+    <!-- <a href="https://docs.emmet.io/cheat-sheet/">emmet의 기능들</a> -->
+
+    <div class="container">
+        <h1>동일한 페이지 내에서의 이동(책갈피)</h1>
+        <ul>
+            <li><a href="#one">one</a></li>
+            <li><a href="#two">two</a></li>
+            <li><a href="#three">three</a></li>
+        </ul>
+        <div class="spacer"></div>
+        <p id="one">one Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia dolor unde quibusdam, suscipit laudantium consequuntur ab voluptatem esse earum vel incidunt optio, quod amet corporis fugit harum aliquam temporibus?</p>
+        <div class="spacer"></div>
+        <p id="two">two Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor natus aut veritatis aliquid quia beatae. Ullam illo odit quia voluptas magnam quos quasi iusto officia repudiandae blanditiis. Accusantium, amet nostrum!</p>
+        <div class="spacer"></div>
+        <p id="three">three Lorem ipsum dolor, sit amet consectetur adipisicing elit. A dignissimos vitae doloremque autem magnam unde! Vitae quasi qui, excepturi ratione deserunt impedit aut esse. Sit labore molestiae tenetur aut laborum?</p>
+    </div>
+</body>
+</html>

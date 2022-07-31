@@ -1,0 +1,17 @@
+텍스트 파일도 만들 수 있습니다.
+최자드가 만들었습니다.
+
+! 입력 후 tap키를 눌렀다
+<body> 에 h1 (헤드라인)입력 후 tap키를 눌렀다
+<body> 에 h2 입력 후 tap키를 눌렀다
+<body> 에 h3 입력 후 tap키를 눌렀다  *숫자가 높아질수록 글씨가 작아짐
+<body> 에 a 입력 후 tap키를 눌렀다 <a href="https://naver.com">네이버</a>
+                         hrer = (하이퍼링크)
+<body> 에 img 입력 후 tap키를 눌렀다
+src= 이후에 images/ 탭 눌러서 사진 선택 (같은 폴더 안에있어야함)
+<title>Document</title>아래에 style 입력 후 tap
+ css 작성  h1에 대한
+ h1{
+    color : 
+    background-color : 
+ }

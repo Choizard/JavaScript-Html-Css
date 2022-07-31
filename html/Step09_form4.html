@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step09_form4.html</title>
+    <style>
+        #comment{
+            width: 100%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>폼 요소에 기본값 설정하기</h1>
+    <p>
+        서버에서 클라이언트에게 폼을 응답할 때 이미 저장된 값을
+        출력한 채로 응답을 해야할 때가 있다.
+        예를 들어 회원가입된 정보보기로 이동한다면
+        DB에 이미 저장된 내용을 출력 해주어야 한다.
+    </p>
+    <form action="update.jsp">
+        이메일<br>
+        <input type="email" name="email" value="fenneccui@naver.com"><br>
+        <br>
+        <fieldset>
+            <legend>취미 정보 선택</legend> <!-- checkbox 는 다중선택 가능-->
+            <label>
+                <input type="checkbox" name="hobby" value="soccer">축구
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="baking" checked>베이킹
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="piano">피아노
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="etc">기타
+            </label>
+        </fieldset><br>
+        <label for="job">직업</label>
+        <select name="job" id="job">
+            <option value="">선택</option>
+            <option value="programmer">프로그래머</option>
+            <option value="doctor" selected>의사</option>
+            <option value="pianist">피아니스트</option>
+            <option value="etc">기타</option>
+        </select><br>
+        <br>
+        <!-- textarea의 초기값은 textarea의 innerText로 출력을 해놓아야 한다. -->
+        <textarea name="comment" id="comment"> textarea의 초기값은 textarea의 innerText에다가 출력을 해놓아야 한다.
+        </textarea><br>
+        <br>
+        <button type="submit">수정하기</button>
+        <button type="submit">취소</button>
+    </form>
+</body>
+</html>

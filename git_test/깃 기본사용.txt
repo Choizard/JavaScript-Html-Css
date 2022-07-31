@@ -1,0 +1,31 @@
+1.
+
+깃으로 관리 시작 git init (git repository : 깃 저장소)
+                        (git local repository : 깃 로컬 저장소 = 내 컴퓨터 안에)
+                        (git remote repository : 깃 리모트 저장소 = Git hub 안에)
+
+깃의 변화상태가 있나 볼 때 git status   Untracked files (새로 생긴 파일)
+                                                 git HEAD를 cursor라고도함
+
+사진찍으려고 올릴때 git add 파일명   git add . 입력하면 변경된 모든사항을 올림
+
+사진 찍을 때 git commit -m "할말"
+
+깃의 변화이력을 볼 때 git log
+
+찍은걸 취소할 때는 git reset --hard HEAD~(~의 갯수만큼 취소함)
+
+2. 
+
+branch 포인트를 새로 만듦    git branch 브랜치이름
+
+HEAD를 해당 branch로 옮김   git checkout 브랜치이름
+
+해당 브랜치에서 작업을 함
+
+3-1 실험이 끝난 후 (병합)
+
+master와 실험용브랜치와 병합을함    git merge 병합할 브랜치 이름
+
+같은 정보를 변경을 했을때 정도가 다를 경우 병합 시에 충돌이 일어날 수 있고 
+   = 프로그래머가 정의를 해서 충돌만 해결하면 됨
